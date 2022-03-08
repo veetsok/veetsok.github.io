@@ -1,0 +1,462 @@
+body {
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1160px;
+	padding: 0 20px;
+}
+
+.block__title {
+	font-family: "Ubuntu-Bold",sans-serif;
+	font-size: 50px;
+	color: #324489;
+}
+
+.block__text {
+	max-width: 992px;
+	margin-top: 25px;
+	line-height: 150%;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+.block__subtitle {
+	font-family: "Ubuntu-Bold",sans-serif;
+	margin-top: 60px;
+	font-size: 30px;
+	color: #324489;
+}
+
+/* Modal Image */
+#myImg, #myImg1,#myImg2  {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+#myImg1:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(21, 26, 44, 0.85); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+	padding: 0 100px;
+}
+
+.modal-content img{
+	width: 100%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption, #caption1, #caption2 {
+	position: relative;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+	text-align: left;
+  padding: 10px 100px;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 14px;
+	color: #A3A8BC;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+
+
+#header {
+	padding: 40px 0;
+}
+
+#header-author{
+	display: flex;
+	justify-content: space-between;
+}
+
+#header__author__name a {
+	text-decoration: none;
+	font-family: "Ubuntu-Medium",sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #272D45;
+	cursor: pointer;
+}
+
+#header__author__name a:hover {
+	color: #77DBF1;
+}
+
+#header__author__phone a {
+	text-decoration: none;
+	font-family: "Ubuntu-Medium",sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #272D45;
+}
+
+#header__author__phone a:hover {
+	color: #77DBF1;
+}
+
+#main__title {
+	display: inline-block;
+	margin-top: 150px;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 16px;
+	color: #272D45;
+	margin-right: 40px;
+}
+
+#main .container {
+	position: relative;
+}
+
+#main .block__title{
+	max-width: 455px;
+	margin-top: 20px;
+	margin-bottom: 278px;
+	font-size: 80px;
+}
+
+#main-image {
+	font-size: 0;
+	max-width: 960px;
+	position: absolute;
+	top: 0;
+	right: -230px;
+}
+
+#main-image img{
+	width: 100%;
+}
+
+#content {
+	padding: 60px 0;
+	background: #F5F8FE;
+}
+
+#content__title {
+	font-family: "Ubuntu-Bold",sans-serif;
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #324489;
+	margin-bottom: 10px;
+}
+
+.content__ref__item {
+	margin-top: 20px;
+}
+
+.content__ref__item:nth-child(5) {
+	margin-left: 50px;
+}
+
+.content__ref__item:nth-child(4) {
+	margin-left: 50px;
+}
+
+.content__ref__item a{
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 20px;
+	text-decoration-line: underline;
+	color: #272D45;
+}
+
+#content__sub {
+	max-width: 992px;
+	margin: 100px 0;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 22px;
+	line-height: 150%;
+	color: #272D45;
+}
+
+#features {
+	margin-bottom: 130px;
+}
+
+#features .block__title{
+ margin-bottom: 5px;
+}
+
+.features__text {
+	max-width: 995px;
+	margin-top: 25px;
+	line-height: 150%;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+.features__text li {
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: -20px;
+	font-family: "Ubuntu-Bold",sans-serif;
+	color: #4ACEEB;
+}
+
+.features__text ol {
+	margin-top: 10px;
+}
+
+.features__text li:nth-child(1) {
+	margin-top: 0;
+}
+
+.features__text li span {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+#necessary ul {
+	max-width: 970px;
+	margin-top: 25px;
+	padding-inline-start: 30px;
+	
+}
+
+#necessary li {
+  color: #4ACEEB;
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+#necessary li span{
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+#necessary li a{
+	font-family: "Ubuntu-Bold",sans-serif;
+	font-size: 18px;
+	color: #2EBEDE;
+}
+
+#necessary li a:hover {
+	color: #77DBF1;
+}
+
+#learnJs {
+	margin-top: 130px;
+}
+
+#learnJs .block__title {
+	max-width: 997px;
+	
+}
+
+.learnJs__image{
+	cursor: pointer;
+	max-width: 893px;
+	margin-top: 25px;
+}
+
+.learnJs__image img {
+	width: 100%;
+}
+
+.learnJs__image__sub {
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 14px;
+	color: #A3A8BC;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 10px 0px;
+}
+
+#canNotJs{
+	margin-top: 130px;
+}
+
+#canNotJs .block__title {
+	max-width: 992px;
+}
+
+.canNotJs__text {
+	max-width: 995px;
+	margin-top: 25px;
+	line-height: 150%;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+.canNotJs__text li {
+	margin-top: 30px;
+	font-size: 20px;
+	margin-left: -20px;
+	font-family: "Ubuntu-Bold",sans-serif;
+	color: #4ACEEB;
+}
+
+.canNotJs__text ol {
+	margin-top: 10px;
+}
+
+.canNotJs__text li:nth-child(1) {
+	margin-top: 0;
+}
+
+.canNotJs__text li span {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	font-family: "Ubuntu-Regular",sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+#worthLearn{
+	margin-top: 130px;
+}
+
+#worthLearn a {
+	font-family: "Ubuntu-Bold",sans-serif;
+	font-size: 18px;
+	color: #2EBEDE;
+}
+
+#worthLearn a:hover{
+	color: #77DBF1;
+}
+
+#conclusions {
+	margin-top: 130px;
+}
+
+#footer {
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+#footer .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__text{
+	font-family: "Ubuntu-Regular", sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+.footer__text a{
+	text-decoration: none;
+	font-family: "Ubuntu-Regular", sans-serif;
+	font-size: 18px;
+	color: #272D45;
+}
+
+.footer__text:last-child{
+	cursor: pointer;
+}
+
+.footer__text a:hover {
+	color: #77DBF1;
+}
+
+#button {
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	transition: all 1.3s ease-in-out;
+}
+
+#button .pulse a{
+	position: relative;
+}
+
+.pulse a:hover:before{
+	animation: pulse-2 3s infinite;
+	content: '';
+	width: 40px;
+	height: 40px;
+	top: 5px;
+	left: 4px;
+	position: absolute;
+	border: 8px solid #2EBEDE;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+#button svg {
+	fill:#2EBEDE;
+	border: 2px solid #2EBEDE;
+	border-radius: 50%;
+	width: 20px;
+	padding: 20px;
+}
+
+@keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+

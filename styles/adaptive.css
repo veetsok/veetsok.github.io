@@ -1,0 +1,233 @@
+@media screen  and (max-width: 1600px) {
+	.modal-content {
+		max-width: 1000px;
+	}
+
+	#main .container {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0;
+}
+
+#main__title {
+	margin-top: 112px;
+}
+
+#main .block__title{
+	margin-bottom: 0;
+}
+
+#main-image {
+	font-size: 0;
+	
+	position: static;
+}
+
+	#caption, #caption1, #caption2 {
+		max-width: 1000px;
+	}
+}
+
+@media screen  and (max-width: 1120px) {
+	#button  {
+		display: none;
+	}
+}
+@media screen  and (max-width: 1120px) {
+	#main__title {
+		margin-top: 72px;
+	}
+
+	#main-image {
+		max-width: 720px;
+	}
+
+	#main .block__title {
+		font-size: 70px;
+	}
+
+	#button  {
+		display: none;
+	}
+
+	#caption, #caption1, #caption2 {
+		padding: 10px 50px;
+	}
+
+	.modal-content {
+		padding: 0 50px
+	}
+}
+
+@media screen  and (max-width: 1050px) {
+	.close {
+		top: 40px;
+		right: -50px;
+	}
+}
+
+@media screen  and (max-width: 920px) {
+
+	#main .block__title {
+		font-size: 60px;
+	}
+		#main-image {
+			max-width: 576px;
+	}
+
+		.features__text li  {
+		font-size: 15px;
+	}
+	
+	.canNotJs__text li {
+		font-size: 15px;
+	}
+}
+
+@media screen  and (max-width: 768px) {
+		#main .block__title {
+		font-size: 50px;
+	}	
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media screen  and (max-width: 649px) {
+
+	.block__title {
+		font-size: 28px;
+	}
+
+	.block__text {
+		font-size: 16px;
+	}
+
+	#header__author__name a, #header__author__phone a{
+		font-size: 16px;
+	}
+
+	#main .container {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+	#main .block__title{
+		margin: 20px 0 30px 0;
+		font-size: 40px;
+	}
+
+	#main__title {
+		margin-top: 52px;
+	}
+
+	#main-image {
+		max-width: 412px;
+		position: static;
+	}
+
+	.content__ref__item a {
+		font-size: 18px;
+	}
+
+	#content__sub {
+		font-size: 18px;
+		margin: 100px 0 90px 0;
+	}
+
+	.features__text {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+
+	#necessary ul {
+		margin-top: 20px;
+	}
+
+	.block__subtitle {
+		font-size: 22px;
+		margin-top: 50px;
+	}
+
+	#features {
+		margin-bottom: 90px;
+	}
+
+	.features__text li span {
+		font-size: 16px;
+	}
+
+	#learnJs {
+		margin-top: 90px;
+	}
+
+	.learnJs__image__sub {
+		font-size: 12px;
+	}
+
+	#caption, #caption1 {
+		font-size: 12px;
+		padding: 10px 20px
+	}
+
+	#necessary li {
+		font-size: 20px;
+	}
+
+	#necessary li span{
+		font-size: 16px;
+	}
+	#necessary li a{
+		font-size: 16px;
+	}
+
+	#canNotJs {
+		margin-top: 90px;
+	}
+
+	.canNotJs__text{
+		font-size: 16px;
+	}
+	
+	.canNotJs__text li span{
+		font-size: 16px;
+	}
+
+	#worthLearn {
+		margin-top: 90px;
+		font-size: 16px;
+	}
+
+	#worthLearn a {
+		font-size: 16px;
+	}
+
+	#conclusions{
+		margin-top: 90px;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.footer__text:nth-child(2){
+		max-width:142px;
+	}
+
+	#caption, #caption1, #caption2 {
+		padding: 10px 20px;
+	}
+
+	.modal-content {
+		padding: 0 20px
+	}
+
+	.close {
+		top: 60px;
+		right: -20px;
+		font-size: 25px;
+	}
+}

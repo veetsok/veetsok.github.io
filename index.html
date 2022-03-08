@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/adaptive.css">
+	<link rel="stylesheet" href="./styles/fonts.css">
+	<title>Document</title>
+</head>
+	<body>
+		
+		<div id="header">
+			<div class="container">
+				<div id="header-author">
+					<div id="header__author__name">
+						<a href="https://t.me/kosteev_ivan" target="_blank">Костеев Иван</a>
+					</div>
+					<div id="header__author__phone">
+						<a href="tel:+79270593199">+7 927 059-31-99</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="main">
+			<div class="container">
+				<div id="main__title">Веб-технологии
+					<div class="block__title">Что такое JavaScript</div>
+				</div>
+				
+				<div id="main-image">
+					<img src="./images/main.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="container">
+				<div id="content__title">
+					Содержание
+				</div>
+				<div id="content__ref__block">
+					<div class="content__ref__item">
+						<a href="#features">1. Особенности JavaScript</a>
+					</div>
+					<div class="content__ref__item">
+						<a href="#necessary">2. Для чего нужен JS</a>
+					</div>
+					<div class="content__ref__item">
+						<a href="#learnJs">3. Как добавить JavaScript на страницу</a>
+					</div>
+					<div class="content__ref__item">
+						<a href="#elementJs">JavaScript в элементе script</a>
+					</div>
+					<div class="content__ref__item">
+						<a href="#eventJs">JavaScript в атрибутах событий HTML-элементов</a>
+					</div>
+					<div class="content__ref__item">
+						<a href="#canNotJs">4. Что не умеет делать JavaScript в браузере</a>
+					</div>
+					<div class="content__ref__item">
+						<a href="#worthLearn">5. Стоит ли учить JavaScript?</a>
+					</div>
+					<div class="content__ref__item">
+						<a href="#conclusions">6. Выводы</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+			<div class="container">
+				<div id="content__sub">
+				Интерактивные элементы сайтов и мобильных приложений часто выполняются на языке JavaScript. Он хорошо интегрируется
+				с кодом HTML/CSS, поддерживается основными браузерами и включен в них по умолчанию. Поэтому никаких вопросов с запуском
+				веб-ресурсов не возникает, они работают без участия пользователя.
+				<br>
+				<br>
+				Давайте разберемся, что представляет собой JavaScript, какие задачи он решает и в каких сферах применяется.
+			</div>
+		</div>
+
+		<div id="features">
+			<div class="container">
+				<div class="block__title">
+					Особенности JavaScript
+				</div>
+				<div class="features__text">
+					Инструмент JavaScript (сокращенно JS) относится к языкам программирования высокого уровня с возможностью встраивания
+					в другие приложения. Все типы функциональных модулей создаются в виде сценариев. По синтаксису он схож с языком Java,
+					но общая у них только часть наименования. Платформа регулярно обновляется, код становится все более рациональным.
+				</div>
+				<div class="features__text">
+					<b>Особенности языка:</b>
+					<ol>
+						<li><span>JS изначально разрабатывался по принципу «пиши меньше – делай больше»</span></li>
+						<li><span>Код поддерживает функциональные, императивные и событийно-ориентированные стили
+						</span></li>
+						<li><span>
+							Платформа распространяется бесплатно без лицензионных отчислений разработчикам</span></li>
+					</ol>
+				</div>
+				<div class="features__text">
+					Синтаксис JavaScript подходит не под все задачи. Это привело к появлению ряда искусственных языков, которые
+					транспилируются (конвертируются) после запуска в браузере. Разработчики пишут код на понятном им языке, а платформа «на
+					лету» преобразует его в JS. Примеры: CoffeeScript, Flow, Dart, TypeScript, Brython.
+				</div>
+			</div>
+		</div>
+
+		<div id="necessary">
+			<div class="container">
+				<div class="block__title">
+					Для чего нужен JS
+				</div>
+				<div class="block__text">
+					В веб-приложениях HTML отвечает за разметку страницы. Расположение контента, внешний вид интерфейса описывается
+					с помощью CSS, а JavaScript отвечает за интерактивность и функционал этого интерфейса. Вот примеры задач, которые решает
+					JS:
+				</div>
+				<ul>
+					<li><span>
+						<b>Взаимодействие с пользователем.</b> Всплывающие окна с полем для ввода почты или других данных, уведомления об использовании
+						cookie.
+					</span></li>
+					<li><span>
+						<b>Обработка данных HTML.</b> JS помогает заполнить необходимые поля в формах, проверять буквенные и числовые значения, а также
+						управлять HTML-элементами на странице. Например, в конструкторе лендингов <a target="_blank" href="https://tilda.cc/ru/">Tilda</a> можно перетаскивать блоки и по клику
+						менять шрифты, цвета текста, фонов и другие значения.
+					</span></li>
+					<li><span>
+						<b>Анимация.</b> Это не только движущиеся объекты на странице и кнопки, но и карусель в галерее или плавная прокрутка страницы.
+						Например, <a target="_blank" href="https://www.pinterest.ru/">Pinterest</a> с помощью JavaScript создал эффект бесконечной ленты.
+					</span></li>
+					<li><span>
+						<b>Математические вычисления.</b> С помощью JS-скриптов на сайтах реализованы калькуляторы, например подсчет суммы заказа
+						в корзине интернет-магазина.
+					</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="learnJs">
+			<div class="container">
+				<div id="howJs">
+						<div class="block__title">
+							Как добавить JavaScript на вашу страницу?
+						</div>
+						<div class="block__text">
+							JavaScript применяется к вашей HTML странице точно так же, как CSS. И если CSS использует элементы
+							<b>«link»</b> для внешних стилей и <b>«style»</b>
+							для встроенных в HTML,
+							то для JavaScript нужен только один друг в HTML мире — элемент <b>«script»</b>. Давайте узнаем,
+							как это работает.
+						</div>
+						
+						<div id="elementJs">
+							<div class="block__subtitle">
+								JavaScript в элементе script
+							</div>
+							<div class="block__text">
+								Самый простой способ внедрения JavaScript в HTML-документ – использование тега
+								<b>«script»</b>. Теги <b>«script»</b> часто помещают в элемент <b>«head»</b>, и ранее этот способ считался чуть ли не
+								обязательным.Однако в наши дни теги <b>«script»</b> используются как в элементе <b>«head»</b>, так и в теле веб -
+								страниц.
+							</div>
+							<div class="learnJs__image">
+								<img src="./images/elementJs.png" id="myImg" alt="">
+								<div id="myModal" class="modal">
+									<span class="close" id="">&times;</span>
+									<img class="modal-content" id="img01">
+									<div id="caption">
+										Подключение в элементе script
+									</div>
+								</div>
+								<div class="learnJs__image__sub">
+									Подключение в элементе script
+								</div>
+							</div>
+
+						<div id="eventJs">
+								<div class="block__subtitle">
+									JavaScript в атрибутах событий HTML-элементов
+								</div>
+								<div class="block__text">
+									В следующем примере функция JavaScript помещается в раздел
+									
+									<b>«head»</b> HTML-документа. Вот пример HTML-элемента <b>«button»</b> с атрибутом события, обеспечивающим реакцию на щелчки мышью.
+											При нажатии кнопки генерируется событие onclick.
+								</div>
+								<div class="learnJs__image">
+									<img src="./images/eventJs.png" id="myImg1" alt="">
+									<div id="myModal1" class="modal">
+										<img class="modal-content" id="img02">
+										<span class="close" id="">&times;</span>
+										<div id="caption1">
+											Подключение в атрибутах событий HTML-элементов
+										</div>
+									</div>
+									<div class="learnJs__image__sub">
+										Подключение в атрибутах событий HTML-элементов
+									</div>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="canNotJs">
+			<div class="container">
+				<div class="block__title">
+					Что не умеет делать JavaScript в браузере
+				</div>
+				<div class="block__text">
+					Несмотря на универсальность, JS не способен заменить другие языки. И все это из-за стремления разработчиков к росту
+					безопасности, а также предотвращению несанкционированного доступа к персональной и коммерческой информации. Такие
+					моменты приходится учитывать кодеру, чтобы созданный ресурс не стал «сборником» ошибок.
+				</div>
+
+				<div class="learnJs__image">
+					<img src="./images/CanNot.png" id="myImg2" alt="">
+					<div id="myModal2" class="modal">
+						<span class="close" id="">&times;</span>
+						<img class="modal-content" id="img03">
+						<div id="caption2">
+							Что не умеет делать JavaScript в браузере
+						</div>
+					</div>
+					<div class="learnJs__image__sub">
+						Что не умеет делать JavaScript в браузере
+					</div>
+				</div>
+				<div class="canNotJs__text">
+					<b>Примеры ограничений</b>
+					<ol>
+						<li><span>
+							Чтение, запись, копирование, запуск произвольных файлов на локальном накопителе. Есть возможность разрешить загрузку
+							определенных типов файлов на сервер, но не наоборот. В случае скачивания обычно обходятся без JS-скриптов.
+						</span></li>
+						<li><span>
+							Все окна и вкладки в рамках даже одной страницы изолированы друг от друга. При открытии дополнительной формы напрямую из
+							«первичной» придется писать отдельный код, чтобы они обменивались между собой введенными данными.
+						</span></li>
+						<li><span>
+							Скрипты после запуска взаимодействуют только с сервером, откуда была открыта страница. Работать со сторонними сайтами и
+							доменами допускается, но для этого понадобится явное разрешение.
+						</span></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div id="worthLearn">
+			<div class="container">
+				<div class="block__title">
+					Стоит ли учить JavaScript?
+				</div>
+				<div class="block__text">
+					JavaScript остается самым популярным языком программирования: по статистике, <a href="https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites" target="_blank">97% сайтов</a> написано именно на нем.
+					JavaScript — один из языков программирования, которые просто освоить без опыта. Он сравнительно несложный, а ошибки
+					легко обнаружить. Например, если кнопка при нажатии не работает или работает неверно, то нужно искать ошибку в коде.
+					Чтобы кодить на JS, нужно понимание, как устроены HTML и CSS. Когда освоите язык, сможете лучше разбираться с работой
+					библиотек и фреймворков (React, jQuery, Angular, Lodash, Node.js, Vue.js и других). 
+					<br>
+					<br>
+					В среднем JS-разработчики  <a href="https://russia.trud.com/salary/692/78054.html" target="_blank">зарабатывают</a> 84 839 рублей в месяц, а самые высокие зарплаты в России по данным <a href="https://saratov.hh.ru/search/vacancy?area=1&clusters=true&enable_snippets=true&ored_clusters=true&text=Javascript&order_by=salary_desc" target="_blank">hh.ru</a> составляют около 300 тыс. рублей.
+				</div>
+			</div>
+		</div>
+
+		<div id="conclusions">
+			<div class="container">
+				<div class="block__title">
+					Выводы
+				</div>
+				<div class="block__text">
+					Поздравляем, вы сделали ваш первый шаг в мир JavaScript. Мы начали всего-лишь с теории, чтобы вы привыкли к тому, что
+					вы будете использовать JavaScript, и что именно вы можете делать с его помощью. На этом пути вы увидели несколько
+					примеров кода и выучили, как JavaScript вписывается в остальной код на вашем сайте среди всего прочего.
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="container">
+				<div class="footer__text">
+					2022
+				</div>
+				<div class="footer__text">
+					Верстка — <a href="https://t.me/kosteev_ivan" target="_blank">Костеев Иван</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="button" class="pulse">
+			<a href="#header">
+				<svg width="16" height="22" viewBox="0 0 16 22" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M7.29289 0.292892C7.68342 -0.0976314 8.31658 -0.0976315 8.70711 0.292892L15.0711 6.65685C15.4616 7.04738 15.4616 7.68054 15.0711 8.07107C14.6805 8.46159 14.0474 8.46159 13.6569 8.07107L8 2.41421L2.34315 8.07107C1.95262 8.46159 1.31946 8.46159 0.928932 8.07107C0.538407 7.68054 0.538407 7.04738 0.928932 6.65685L7.29289 0.292892ZM7 22L7 1L9 1L9 22L7 22Z"
+					 />
+				</svg>
+			</a>
+		</div>
+		
+
+
+		<script src="./js/index.js"></script>
+	</body>
+</html>
